@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/calculator-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calculadora científica moderna com funcionalidades avançadas, histórico e interface responsiva" />
+    <meta name="keywords" content="calculadora, científica, matemática, trigonometria, logaritmo" />
+    <meta name="author" content="Desenvolvedor Front-end Experiente" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Calculadora Científica" />
+    <meta property="og:description" content="Calculadora científica moderna com funcionalidades avançadas" />
+    <meta property="og:image" content="/calculator-preview.png" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Calculadora Científica" />
+    <meta property="twitter:description" content="Calculadora científica moderna com funcionalidades avançadas" />
+    <meta property="twitter:image" content="/calculator-preview.png" />
+    
+    <!-- PWA -->
+    <meta name="theme-color" content="#3b82f6" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Preload critical resources 
+    <link rel="preload" href="/src/main.tsx" as="script" />-->
+    
+    <title>Calculadora Científica</title>
+  </head>
+  <body class="bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

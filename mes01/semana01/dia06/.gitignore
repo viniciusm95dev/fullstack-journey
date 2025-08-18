@@ -1,0 +1,103 @@
+# Registros
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Diretórios e arquivos do editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Teste
+coverage
+*.lcov
+.nyc_output
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Criar resultados
+build/
+out/
+
+# Diretórios de dependência
+node_modules/
+jspm_packages/
+
+# Diretório de cache npm opcional
+.npm
+
+# Cache eslint opcional
+.eslintcache
+
+# Cache de micropacote
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Histórico REPL opcional
+.node_repl_history
+
+# Saída do 'npm pack'
+*.tgz
+
+# Arquivo de integridade do fio
+.yarn-integrity
+
+# arquivo de variáveis de ambiente dotenv
+.env.test
+
+# cache do empacotador de encomendas (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Saída de compilação do Next.js
+.next
+
+# Nuxt.js constrói/gera saída
+.nuxt
+dist
+
+# Saídas de construção do Storybook
+.out
+.storybook-out
+
+# Pastas temporárias
+tmp/
+temp/
+
+# Dados de tempo de execução
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diretório de cobertura usado por ferramentas como Istambul
+coverage
+
+# Complementos binários compilados (https://nodejs.org/api/addons.html)
+build/Release
+
+# Arquivos gerados pelo sistema operacional
+Thumbs.db
+ehthumbs.db
